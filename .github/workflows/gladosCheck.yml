@@ -3,12 +3,12 @@ name: auto check
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ master ]
     paths-ignore:
       - 'README.md'
       - 'imgs/**'
   schedule:
-    - cron: '0 1,4 * * *'
+    - cron: '31 4,7,10 * * *'
 
 jobs:
   build:
